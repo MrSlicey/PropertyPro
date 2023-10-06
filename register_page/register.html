@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropertyPro: Register</title>
+    <link rel="stylesheet" href="register.css"/>
+</head>
+<body id="body"> 
+    <!--Centered Sign in Container-->
+    
+    <div class="container">
+        <!--Home Navigation Icon-->
+        <svg id="barlogo"  xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24"> <a href="../home_page/index.html" target="_self">
+            <path id="barlogo" fill="white" d="M3.5 4.25V20.5H5v-14h14.727a.773.773 0 0 0 0-1.545H5v-.75a.705.705 0 0 0-.705-.705H4.25a.75.75 0 0 0-.75.75ZM22 5.728a2.27 2.27 0 0 1-1 1.883v7.639A3.75 3.75 0 0 1 17.25 19h-8.5a3.734 3.734 0 0 1-2.25-.75v2.5c0 .69-.56 1.25-1.25 1.25h-2C2.56 22 2 21.44 2 20.75V4.25A2.25 2.25 0 0 1 4.25 2h.045c.954 0 1.767.606 2.074 1.455h13.358A2.272 2.272 0 0 1 22 5.728ZM6.5 8v7.25a2.25 2.25 0 0 0 2.25 2.25h8.5a2.25 2.25 0 0 0 2.25-2.25V8h-13Zm3 4.46a1 1 0 0 1 .35-.76l2.825-2.42a.5.5 0 0 1 .65 0l2.826 2.42a1 1 0 0 1 .349.76v3.04a.5.5 0 0 1-.5.5h-1.75a.25.25 0 0 1-.25-.25V14.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.25a.25.25 0 0 1-.25.25H10a.5.5 0 0 1-.5-.5v-3.04Z"/> 
+          </a> </svg>
+          <div class="topbarcontents tbhome">
+            <a href="../home_page/index.html" target="_self"><h1 class="topbarcontents" id="tbtitle">PropertyPro.</h1></a>
+        </div>
+        <!--Start Form-->
+        <div class="formbody">
+            <h1 class="heading">REGISTER</h1>
+          <form action="../home_page/index.html" method="post">
+              <label for="fname">Given Name: </label>
+              <input name="fname" class="form login-form" type="text" placeholder="Given Name/s"></input>
+              <label for="lname">Sirname: </label>
+              <input name="lname" class="form login-form" type="text" placeholder="Sir Name"></input>
+              
+              <label for="email">Email: </label>
+              <input name="email" class="form login-form" type="email" placeholder="Email"></input>
+              <label>Password: </label>
+              <input name="password" class="form login-form" type="password" placeholder="Password"></input>
+              <label>Confirm Password: </label>
+              <input name="password" class="form login-form" type="password" placeholder="Confirm Password"></input>
+              <button type="submit" class="login"><h1 class="login-button">Register</h1></button>
+          </form>
+          <!--Register Prompt-->
+          <h3>Already have an account? <a href="../login_page/login.html">Log In!</a></h3>
+          <!--Other ways to sign in via API-->
+          <h3 class="loginvia"> or Register via</h3>
+          <div class="icons">
+            <img src="../images/google-icon.svg"/>
+            <img src="../images/linkedin-icon.svg"/>
+            <img src="../images/microsoft-icon.svg"/>
+            <img src="../images/facebook.svg"/>
+
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>

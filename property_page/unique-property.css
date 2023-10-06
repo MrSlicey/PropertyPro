@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black; 
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* Topbar with Nav Options*/
+#topbar{
+    background-color: black;
+    display: flex;
+    justify-content: baseline;
+    width: 100vw;
+    margin: 0 0;
+    padding: 1% 1%;
+}
+.mobilelogo{
+    display: flex;
+}
+.topbarcontents, .topbarcontents>h2{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: white;
+}
+.navbar{
+    margin-left:2%;
+    /*border:5px solid red;*/
+    height: 8vh;
+    padding: 1%;
+    border-radius: 1vw;
+}
+.navbar:hover{
+    background-color: rgba(75, 75, 75, 0.5);
+}
+.navbarmain{
+    justify-content: space-evenly;
+    display: flex;
+    width: 85vw;
+    min-width: 60vw;
+}
+.navmargin{
+    margin-left:50px;
+}
+#barlogo{
+    background-color: black;
+    min-width: 5vw;
+}
+#tbtitle:hover{
+    color: aqua;
+   transition: 1s;
+}
+#barlogo:hover{
+    fill: aqua;
+   transition: 1s;
+}

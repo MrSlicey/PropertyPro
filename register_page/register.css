@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /*border: 5px solid red;*/
+}
+#barlogo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    fill: black;
+}
+#tbtitle{
+    position: absolute;
+    top: 0.25vw;
+    left: 4.25vw;
+    color: black;
+}
+#body{
+    background-image: url(../images/image2.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0;
+    padding: 20vh;
+    padding-top: 5vh;  
+    backdrop-filter: blur(3px);
+    display: flex;
+}
+.formbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  auto;
+    border: 3px black solid;
+    width: 30vw;
+    height: 90vh;
+    padding: 0;
+    border-radius: 2vw;
+    background-color: rgba(99, 98, 97, 0.6);
+}
+.form{
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto;
+    width: 25vw;
+    border-radius: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+.login-form{
+    margin-left: 0;
+   border: 1px solid black;
+}
+.heading{
+    font-size: 4vw;
+    margin-bottom: 3vw;
+}
+label{
+    margin-top: 1vh;
+}
+.login{
+    width: 20vw;
+    margin: 3vh auto;
+    display: flex;
+    height: 6vh;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(99, 98, 97, 0.6);
+    border-radius: 5vw;
+    border: 2px solid black;
+}
+.login:hover{
+    background-color: white;
+    transition: 2.5s;
+}
+.login-button{
+    margin: auto auto;
+    font-size: 2vw;
+}
+.loginvia{
+    margin: 0%;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.icons{
+    /*border: 5px red solid;*/
+    display: flex;
+    width: 90%;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icons>img{
+    width: 2vw;
+}
