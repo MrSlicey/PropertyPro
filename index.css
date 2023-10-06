@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black; 
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* Topbar with Nav Options*/
+#topbar{
+    background-color: black;
+    display: flex;
+    justify-content: baseline;
+    width: 100vw;
+    margin: 0 0;
+    padding: 1% 1%;
+}
+.mobilelogo{
+    display: flex;
+}
+.topbarcontents, .topbarcontents>h2{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: white;
+}
+.navbar{
+    margin-left:2%;
+    /*border:5px solid red;*/
+    height: 8vh;
+    padding: 1%;
+    border-radius: 1vw;
+}
+.navbar:hover{
+    background-color: rgba(75, 75, 75, 0.5);
+}
+.navbarmain{
+    justify-content: space-evenly;
+    display: flex;
+    width: 85vw;
+    min-width: 60vw;
+}
+.navmargin{
+    margin-left:50px;
+}
+#barlogo{
+    background-color: black;
+    min-width: 5vw;
+}
+#tbtitle:hover{
+    color: aqua;
+   transition: 1s;
+}
+#barlogo:hover{
+    fill: aqua;
+   transition: 1s;
+}
+/*Main Conatiner Area*/
+.maincontainer{
+    background-color: rgb(74, 72, 72);
+    width: 100vw;
+    height: 100%;
+   padding: 1.5% 1%;
+}
+/*Front Page Listings*/
+.listing{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    border-radius: 1vw;
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 1.5%;
+}
+/*Listing Image*/
+.listingimage{
+    height: 20vw;
+    margin: 1.5%;
+}
+.propstats{
+    margin-top:1.5%;
+    display: flex;
+    flex-direction: column;
+}
+.propstatlist{
+    margin-left: 7%;
+    margin-top: 5%;
+    line-height: 30px;
+    list-style: none;
+}
+.propstatlist .beds{
+    margin-bottom: 1rm;
+    background: url(../images/bed-outline.svg) no-repeat left 7px;
+    padding: 0px 0 3px 24px;
+}
+.propstatlist .baths{
+    margin-bottom: 1re;
+    background: url(../images/bath-shower-line.svg) no-repeat left 7px;
+    padding: 0px 0 3px 24px;
+}
+.propstatlist .cars{
+    margin-bottom: 1re;
+    background: url(../images/garage.svg) no-repeat left 7px;
+    padding: 0px 0 3px 24px;
+}
+.propstatlist .landsize{
+    margin-bottom: 1re;
+    background: url(../images/turf-size.svg) no-repeat left 7px;
+    padding: 0px 0 3px 24px;
+}
+.propstats>h2{
+    margin-left: 15px;
+}
+/*agent card*/
+.agent-image{
+    height: 10vh;
+}
+.agent{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    gap: 20px;
+}
+.agent-details{
+    align-items: middle;
+    border-left: 0.1vw solid black;
+    padding-left: 0.1vw;
+}
+.name{
+    padding-top: 1vh;
+}
+.agency{
+    padding-bottom:1vh;
+}
+
+
+/*Divider*/
+.divider{
+    width: 0.1%;
+    height: 90%;
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    background:black;
+}
+/*Property Blurb Section of Listing Card*/
+.propblurb{
+    margin-top:1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 20px;
+    margin-right: 5px;
+    max-width: 50%;
+    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.blurb{
+    height: 100%;
+    font-size: 1.5vw;
+}
+.seemore{
+    text-align: end;
+    font-size: 1.2vw;
+}
+
+
+
+
+
+/*MOBILE VERSION*/
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: black; 
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        min-width: 100vw;
+    }
+    /* Topbar with Nav Options*/
+    #topbar{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        min-width:100vw;
+        margin: 0 0;
+        padding: 1% 1%;
+    }
+    .topbarcontents, .topbarcontents>h2{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        color: white;
+    }
+    .navbar{
+        margin-left:0.5%;
+       /* border:5px solid red;*/
+        height: 3vh;
+        padding: 0;
+        border-radius: 1vw;
+        font-size: 2vw;
+        margin-top: 0.1vh;
+    
+    }
+    .mobilelogo{
+        display: flex;
+        margin-bottom: 0.1vh;
+        padding: 0%;
+    }
+
+    .navbar:hover{
+        background-color: rgba(75, 75, 75, 0.5);
+    }
+    .navbarmain{
+        justify-content: space-evenly;
+        display: flex;
+        width: 97vw;
+    }
+    
+    #barlogo, #tbtitle{
+        background-color: black;
+        min-width: 5vw;
+        max-width: 5vw;
+        font-size: 1rem;
+        padding: 0%;
+        margin-bottom: 0em;
+        max-height: 2vh;
+    }
+    #tbtitle:hover{
+        color: aqua;
+       transition: 1s;
+    }
+    #barlogo:hover{
+        fill: aqua;
+       transition: 1s;
+    }
+    /*Main Conatiner Area*/
+    .maincontainer{
+        background-color: grey;
+        width: 100%;
+        height: 100%;
+       padding: 1.5% 1%;
+    }
+    /*Front Page Listings*/
+    .listing{
+        width: 100%;
+        height: 15vh;
+        background-color: white;
+        border-radius: 1vw;
+        display: flex;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    /*Listing Image*/
+    .listingimage{
+        height: 30vw;
+        margin: 1.5%;
+    }
+    .propstats{
+        margin-top:1.5%;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5vh;
+        min-width: 20vw;
+        margin-right: 1vw;
+    }
+    
+    .propstatlist{
+        margin-left: 7%;
+        margin-top: 5%;
+        line-height: 1vh;
+        list-style: none;
+    }
+    .propstatlist .beds{
+        background: url(../images/bed-outline.svg) no-repeat left ;
+        background-size: 1vh;
+        padding: 0px 0 3px 24px;
+    }
+    .propstatlist .baths{
+        background: url(../images/bath-shower-line.svg) no-repeat left ;
+        background-size: 1vh;
+        padding: 0px 0 3px 24px;
+    }
+    .propstatlist .cars{
+        background: url(../images/garage.svg) no-repeat left ;
+        background-size: 1vh;
+        padding: 0px 0 3px 24px;
+    }
+    .propstatlist .landsize{
+        background: url(../images/turf-size.svg) no-repeat left ;
+        background-size: 1vh;
+        padding: 0px 0 3px 24px;
+    }
+    .propstats>h2{
+        margin-left: 15px;
+    }
+    /*agent card*/
+    .agent-image{
+        height: 5vh;
+        max-height: 5vh;
+    }
+    .agent{
+        display: flex;
+        align-items: center;
+        height: 40%;
+        gap: 1vw;
+    }
+    .agent-details{
+        align-items: middle;
+    }
+    
+    /*Divider*/
+    .divider{
+        width: 0.5vw;
+        height: 90%;
+        margin-left: 0;
+        margin-top:auto;
+        margin-bottom: auto;
+        margin-right: 0;
+        background:black;
+    }
+    /*Property Blurb Section of Listing Card*/
+    .propblurb{
+        margin-top:1.5%;
+        margin-bottom: 1.5%;
+        margin-left: 1vw;
+        margin-right: 5px;
+        max-width: 50vw;
+        min-height: 20vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .blurb{
+        height: 100%;
+        min-width: 70%;
+        font-size: 1.5vw;
+        max-lines: 15;
+    }
+    .seemore{
+        text-align: end;
+        font-size: 1.8vw;
+    }
+}
